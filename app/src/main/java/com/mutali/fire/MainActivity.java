@@ -13,6 +13,7 @@ public class MainActivity extends Activity  implements View.OnClickListener
 {
 	
 	
+	
 	private static final int RC_SIGN_IN = 100;
 	ImageButton  signup;
 	ImageButton  googlesignin;

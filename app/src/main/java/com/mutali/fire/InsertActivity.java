@@ -11,8 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 
 public class InsertActivity extends AppCompatActivity
 {
-	private FirebaseDatabase mfireData;
-	private DatabaseReference databaseRef;
+	private FirebaseDatabase mFirebaseData;
+	private DatabaseReference mDatabaseRef;
 	private EditText editTitle;
 	private EditText editDescription;
 	private EditText editPrice;
@@ -23,12 +23,12 @@ public class InsertActivity extends AppCompatActivity
 		// TODO: Implement this method
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.databaseinput);
-		try{
-		databaseRef= FirebaseDatabase.getInstance().getReference().child("traveldeal");
-		}catch(Exception e){
-			e.printStackTrace();
+		FirebaseUtil.openFirebaseReference("traveldeals");
+
+		mFirebaseData= FirebaseUtil.mFiredatabase;
+		mDatabaseRef= FirebaseUtil.mDatabaseReference;
 			
-		}
+		
 		editDescription= (EditText) findViewById(R.id.databaseinput_description);
 		editPrice= (EditText) findViewById(R.id.databaseinput_textPrice);
 		editTitle=(EditText) findViewById(R.id.databaseinput_txtTitle);
@@ -64,7 +64,19 @@ public class InsertActivity extends AppCompatActivity
 		String price = editPrice.getText().toString();
 		String description= editDescription.getText().toString();
 		TravelDeal deal= new TravelDeal(title,description,price,"");
-		///databaseRef.push().setValue(deald);
+	
+		
+		
+		mDatabaseRef.push().setValue(deal,new DatabaseReference.CompletionListener() {
+				@Override
+				public void onComplete(DatabaseError dataError, DatabaseReference dataRef) {
+				
+					if(dataError != null) {
+						System.err.println("Error adding.!");
+						dataError.toException().printStackTrace();
+					}
+				}
+			});
 		
 		// TODO: Implement this method
 	}
