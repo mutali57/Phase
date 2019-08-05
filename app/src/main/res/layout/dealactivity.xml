@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:hint="@string/dealtitle"
+		android:id="@+id/databaseinput_txtTitle"
+		android:layout_margin="10dp"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/databaseinput_textPrice"
+		android:inputType="numberDecimal"
+		android:hint="@string/price"
+		android:layout_margin="10dp"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:hint="@string/description"
+		android:id="@+id/databaseinput_description"
+		android:layout_margin="10dp"/>
+
+	<Button
+		android:id="@+id/dealImgBUT"
+		android:layout_gravity="center_horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Button"
+		android:layout_margin="10dp"/>
+
+	<ImageView
+		
+		android:id="@+id/dealactivityImageView"
+		android:layout_gravity="center_horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@android:drawable/ic_delete"/>
+
+</LinearLayout>
+

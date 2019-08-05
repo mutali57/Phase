@@ -7,11 +7,14 @@ import org.apache.http.auth.*;
 import com.google.firebase.auth.*;
 //import com.firebase.ui.auth.*;
 import android.support.annotation.*;
+import com.google.firebase.storage.*;
+import org.apache.http.client.utils.*;
 
 
 
 public class FirebaseUtil
-{
+{    public static  FirebaseStorage mstorage;
+     public static StorageReference mstorageRef;
 	public  static FirebaseDatabase mFiredatabase;
 	public static DatabaseReference mDatabaseReference;
 	private static FirebaseUtil mFirebaseUtil;
@@ -41,6 +44,7 @@ public class FirebaseUtil
 					// TODO: Implement this method
 				}
 			};*/
+			connect();
 		}
 		mdeals= new ArrayList <TravelDeal>();
 		mDatabaseReference= mFiredatabase.getInstance().getReference().child(ref);
@@ -56,4 +60,8 @@ public class FirebaseUtil
 		mFirebaseAuth.removeAuthStateListener(mAuthList);
 
 	}*/
+	public static void connect(){
+		mstorage=FirebaseStorage.getInstance();
+		mstorageRef= mstorage.getReference().child("Deals_picture");
+	}
 }

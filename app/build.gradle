@@ -28,6 +28,7 @@ task wrapper(type: Wrapper) {
 
 
 dependencies {
+	compile 'com.google.firebase:firebase-storage:10.0.1'
 	
 	compile 'com.android.support:recyclerview-v7:25.+'
 	compile 'com.android.support:appcompat-v7:25.+'
