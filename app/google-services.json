@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "975896356637",
-    "firebase_url": "https://travelmatics-43230.firebaseio.com",
-    "project_id": "travelmatics-43230",
-    "storage_bucket": "travelmatics-43230.appspot.com"
+    "project_number": "717733778166",
+    "firebase_url": "https://project-13d18.firebaseio.com",
+    "project_id": "project-13d18",
+    "storage_bucket": "project-13d18.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:975896356637:android:1e78ba76636d2ae8",
+        "mobilesdk_app_id": "1:717733778166:android:bc3f34414b179d02",
         "android_client_info": {
-          "package_name": "com.mutali.fire"
+          "package_name": "com.mycompany.project"
         }
       },
       "oauth_client": [
         {
-          "client_id": "975896356637-4eedkdhk3gto19jh6pil1tibvck7fdvs.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.mutali.fire",
-            "certificate_hash": "d122d9adc3e5d5ff346b32c0413f5cf3a3cc4658"
-          }
-        },
-        {
-          "client_id": "975896356637-p3v5jaqc3b1mtca0d4o5i80g6gdvmjdb.apps.googleusercontent.com",
+          "client_id": "717733778166-j7o5pvnd6al67jjlg9erd2o9m9631iko.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBd8WHNRmkU5Lt0bL_aQEMAY4mhl1EpUO8"
+          "current_key": "AIzaSyAXgTh8lM9VC-glsb77Fm-0b3jA7uhhbCo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "975896356637-p3v5jaqc3b1mtca0d4o5i80g6gdvmjdb.apps.googleusercontent.com",
+              "client_id": "717733778166-j7o5pvnd6al67jjlg9erd2o9m9631iko.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="dealtitle">Deal Title</string>
+    <string name="newtravel">New Travel Deal</string>
 
     <string name="description">Description</string>
 
     <string name="price">Price</string>
 
-    <string name="save">save</string>
+    <string name="dealtitle">Deal Title</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="save">Save</string>
 
 
-    <string name="app_name">Fireandroid</string>
+    <string name="app_name">project</string>
     <string name="hello_world">Hello world!</string>
-    <string name="email">Email:</string>
-	<string name="password">Password</string>
-	<string name="newpassword"> New Password</string>
-	<string name="signUp">SignUp</string>
+
 </resources>

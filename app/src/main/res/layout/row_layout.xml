@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:orientation="vertical">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context=".MainActivity">
 	
+<RelativeLayout
+	
+	android:layout_width="fill_parent"
+	android:layout_height="match_parent">
+
+	<ImageView
+		
+		android:id="@+id/row_layoutImageView"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@android:drawable/ic_delete"/>
 
 	<TextView
+		android:textSize="@dimen/textLarge"
 		android:id="@+id/row_title"
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
+		android:layout_toRightOf="@id/row_layoutImageView"/>
+
+	<TextView
+		android:id="@+id/description"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
 		android:text="Text"
-		android:textColor="#FFFFFF"/>
+		android:layout_below="@+id/row_title"
+		android:layout_toRightOf="@id/row_layoutImageView"/>
 
-</LinearLayout>
+	<TextView
+		android:textColor="#f26fff"
+		android:layout_below="@+id/description"
+		android:id="@+id/price"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Text"
+		android:textSize="@dimen/textSmall"
+		android:layout_alignParentRight="true"/>
 
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
