@@ -12,6 +12,11 @@
         android:title="@string/delete"
 		app:showAsAction="never"
 	/>
+	<item
+        android:id="@+id/signout"
+        android:title="@string/sign_out"
+		app:showAsAction="never"
+	/>
    
     
     

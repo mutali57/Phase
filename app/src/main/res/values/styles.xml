@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">	
+		<item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
 	</style>
+	<style name="text_title">	
+
+		<item name="android:typeface">serif</item>
+		<item name="android:textSize">@dimen/text_large</item>
+		<item name ="android:textColor">@color/text_color</item>
+		<item name ="android:layout_margin">@dimen/text_margin</item>	
+		<item name ="android:padding">@dimen/text_padding</item>
+		
+	</style>
+	<style name="text_info" parent="text_title">
+		<item name="android:textSize">@dimen/text_small</item>
+		<item name="android:layout_marginStart">@dimen/start_margins</item>
+	
+	</style>
+	<style name="button" parent="AppTheme" >
+		<item name="android:background">@drawable/button_pressed</item>
+	</style>
+	
+	
 </resources>

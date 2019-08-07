@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="sign_out">SignOut</string>
+
+    <string name="login">Login</string>
+
+    <string name="register">Register</string>
+
+    
+
     <string name="newtravel">New Travel Deal</string>
 
     <string name="description">Description</string>
@@ -13,7 +21,7 @@
     <string name="save">Save</string>
 
 
-    <string name="app_name">project</string>
+    <string name="app_name">Travelmatic</string>
     <string name="hello_world">Hello world!</string>
 
 </resources>

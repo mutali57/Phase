@@ -2,4 +2,9 @@
 <resources>
     <dimen name="textLarge">24sp</dimen>
 	<dimen name="textSmall">18sp</dimen>
+		<dimen name="text_small">15sp</dimen>
+		<dimen name="text_margin">8dp</dimen>
+		<dimen name="text_large">18sp</dimen>
+	  	<dimen name="start_margins">8dp</dimen>
+		<dimen name="text_padding">0dp</dimen>
 </resources>

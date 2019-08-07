@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:hint="@string/dealtitle"
+		android:id="@+id/databaseinput_txtTitle"
+		android:layout_margin="10dp"/>
+
+	<EditText
+		android:layout_below="@+id/databaseinput_txtTitle"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/databaseinput_textPrice"
+		android:inputType="numberDecimal"
+		android:hint="@string/price"
+		android:layout_margin="10dp"/>
+
+	<EditText
+		android:layout_below="@+id/databaseinput_textPrice"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:hint="@string/description"
+		android:id="@+id/databaseinput_description"
+		android:layout_margin="10dp"/>
+
+	<Button
+		android:layout_toStartOf="@+id/dealactivityImageView"
+		android:layout_below="@+id/databaseinput_description"
+		android:id="@+id/dealImgBUT"
+		android:layout_gravity="center_horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Select Image"
+		android:layout_margin="9dp"
+		android:background="@drawable/signinbutton"/>
+
+	<ImageView
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:src="@android:drawable/ic_delete"
+		android:id="@+id/dealactivityImageView"
+		android:layout_toRightOf="@id/databaseinput_txtTitle"
+		android:layout_alignParentEnd="true"
+		android:layout_margin="8dp"/>
+
+</RelativeLayout>
+

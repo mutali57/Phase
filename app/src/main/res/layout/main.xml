@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
-	<LinearLayout
-		android:layout_width="134dp"
-		android:layout_height="495dp"
-		android:orientation="vertical"
-		tools:layout_editor_absoluteX="8dp"
-		tools:layout_editor_absoluteY="8dp">
-		<Button
-			android:id="@+id/button2"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Write Data"
-			tools:layout_editor_absoluteX="150dp"
-			tools:layout_editor_absoluteY="42dp" />
-		<TextView
-			android:id="@+id/textView"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Data"
-			tools:layout_editor_absoluteX="162dp"
-			tools:layout_editor_absoluteY="161dp" />
-	</LinearLayout>
-</android.support.constraint.ConstraintLayout>
+
+	<Button
+		android:layout_above="@+id/login"
+		android:id="@+id/register"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Email sign up"
+		style="@style/text_title"
+		android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+		android:background="#FF0F00"/>
+
+	<com.shobhitpuri.custombuttons.GoogleSignInButton
+		android:id="@+id/login"
+		android:text="Sign in with google"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@style/text_title"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"/>
+
+</RelativeLayout>
+

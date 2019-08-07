@@ -11,6 +11,7 @@ import android.os.*;
 import android.preference.*;
 import com.google.firebase.database.*;
 import android.util.*;
+import com.bumptech.glide.*;
 
 
 public class DealAdapter extends RecyclerView.Adapter<DealAdapter.MyViewHolder>
@@ -21,7 +22,7 @@ public class DealAdapter extends RecyclerView.Adapter<DealAdapter.MyViewHolder>
 	private FirebaseDatabase mfireadatabase;
 	private DatabaseReference mdatabasereference;
 	private ChildEventListener mchildListener;
-
+   private  ImageView  imageThumb;
 	public DealAdapter()
 	{
 	
@@ -121,6 +122,7 @@ public class DealAdapter extends RecyclerView.Adapter<DealAdapter.MyViewHolder>
 		TextView title;
         TextView description;
 		TextView price;
+		ImageView thumb;
 		
 
 		public MyViewHolder(View v)
@@ -131,7 +133,8 @@ public class DealAdapter extends RecyclerView.Adapter<DealAdapter.MyViewHolder>
 			title=  v.findViewById(R.id.row_title);
 			description =v.findViewById(R.id.description);
 			price =v.findViewById(R.id.price);
-	
+			thumb= v.findViewById(R.id.row_layoutImageView);
+			
 			
 		}
 		
@@ -139,12 +142,25 @@ public class DealAdapter extends RecyclerView.Adapter<DealAdapter.MyViewHolder>
 			title.setText(deal.getTitle());
 			description.setText(deal.getDescription());
 			price.setText(deal.getPrice());
+			showImage(deal.getImageUrl());
 		}
+		
+		private void showImage(String url){
+			if (url!=null && url.isEmpty()==false){
+				
+				Glide
+					.with(thumb.getContext()).load(url)
+					.centerCrop().fitCenter()
+					.placeholder(android.R.drawable.btn_minus).into(thumb);
+
+
+			}
+		
 	}
-}
+}}
 
 	
-							
+						
 	
 	
 	

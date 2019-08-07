@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	android:padding="16dp"
+	tools:context=".SignUpActivity">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Register new account"/>
+
+	<EditText
+		android:id="@+id/email"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Email"/>
+
+	<TextView
+		android:id="@+id/first_last_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="First and last name"/>
+
+	<EditText
+		android:id="@+id/first_last_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="First and last name"/>
+
+	<EditText
+		android:id="@+id/password"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Password"
+		android:inputType="textPassword"/>
+
+	<CheckBox
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="show password"
+		android:id="@+id/show"
+		/>
+
+	<Button
+		android:id="@+id/register"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Save"
+		android:layout_gravity="right"
+		android:background="#DF1B61"/>
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone"/>
+
+</LinearLayout>
+
